@@ -2,7 +2,7 @@
 
 This plugin allows to plot both point-by-point-defined and delegate-defined function charts either on a texture or on a custom inspector. An example of what this plugin can do is given in this picture, which shows a chart on the inspector:
 
-![Inspector Example](doc/FullExample.png?raw=true "Full Example")
+![Inspector Example](Documentation~/FullExample.png?raw=true "Full Example")
 
 ## How to use it
 
@@ -27,7 +27,7 @@ The method <code lang="csharp">GUIChartEditor.PushFunction(ChartFunction f, floa
 ```csharp
 GUIChartEditor.PushFunction(x => x * x * x, -1f, 2f, Color.green);
 ```
-![Delegate Example](doc/DelegateExample.png?raw=true "Delegate")
+![Delegate Example](Documentation~/DelegateExample.png?raw=true "Delegate")
 
 ### Plotting a point-by-point function
 
@@ -40,7 +40,7 @@ Vector2[] samples = new Vector2[]
 };
 GUIChartEditor.PushLineChart(samples, Color.red);
 ```
-![Point-by-point Example](doc/PointByPointExample.png?raw=true "Point-by-point")
+![Point-by-point Example](Documentation~/PointByPointExample.png?raw=true "Point-by-point")
 
 ### Plotting points
 
@@ -51,7 +51,7 @@ GUIChartEditor.PushPoint(new Vector2(0.5f, 0.5f), Color.red);
 GUIChartEditor.PushPoint(new Vector2(0.75f, 0.5f), Color.green);
 GUIChartEditor.PushPoint(new Vector2(1f, 1f), Color.yellow);
 ```
-![Point Example](doc/PointExample.png?raw=true "Points")
+![Point Example](Documentation~/PointExample.png?raw=true "Points")
 
 ### Adding numerical labels
 
@@ -61,7 +61,7 @@ The method <code>GUIChartEditor.PushValueLabel(float value, float x, float y, st
 GUIChartEditor.PushValueLabel(0.95f, 1f, 0.95f);
 GUIChartEditor.PushValueLabel(0.43f, 0.5f, 0.43f);
 ```
-![Labels Example](doc/LabelsExample.png?raw=true "Labels")
+![Labels Example](Documentation~/LabelsExample.png?raw=true "Labels")
 
 ## Available options
 
@@ -91,7 +91,7 @@ To add more numerical labels, use <code>GUIChartEditorOptions.ShowLabels(string 
 
 The <code>GUIChartEditorOptions.DrawToTexture(Texture2D texture)</code> will draw the chart on a Texture2D and not on the inspector. Note that the texture will be available only after the <code>EndChart</code> call.
 
-![Draw to texture Example](doc/DrawToTextureExample.png?raw=true "Draw to texture")
+![Draw to texture Example](Documentation~/DrawToTextureExample.png?raw=true "Draw to texture")
 
 
 
@@ -118,7 +118,7 @@ GUIChartEditor.EndChart();
 GUILayout.EndHorizontal(); // comment if you render to texture
 ```
 
-![Complete Example](doc/CompleteExample.png?raw=true "Complete")
+![Complete Example](Documentation~/CompleteExample.png?raw=true "Complete")
 
 # Contributors
 
