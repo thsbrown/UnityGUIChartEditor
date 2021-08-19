@@ -6,6 +6,13 @@
     "unity": "2018.4",
     "keywords": ["editor","charts","GUI", "plot","points"],
     "dependencies": { },
+    "samples": [
+        {
+            "displayName": "Basic Sample",
+            "description": "Basic sample of the gui chart editor.",
+            "path": "Samples~/Basic Sample"
+        }
+    ],
     "author": {
         "name": "Alessandro Tironi",
         "email": "alessandro.tironi7@gmail.com",
