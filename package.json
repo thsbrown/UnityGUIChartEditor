@@ -1,0 +1,14 @@
+{
+    "name": "com.alessandrotironi.unityguicharteditor",
+    "version": "1.0.2",
+    "displayName": "Unity GUI Chart Editor",
+    "description": "This plugin allows to plot both point-by-point-defined and delegate-defined function charts either on a texture or on a custom inspector.",
+    "unity": "2018.4",
+    "keywords": ["editor","charts","GUI", "plot","points"],
+    "dependencies": { },
+    "author": {
+        "name": "Alessandro Tironi",
+        "email": "alessandro.tironi7@gmail.com",
+        "url": "https://alessandrotironigamedev.com/"
+    }
+}
