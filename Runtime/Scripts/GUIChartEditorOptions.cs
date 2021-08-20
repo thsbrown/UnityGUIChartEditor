@@ -92,6 +92,7 @@ namespace Syrus.Plugins.ChartEditor
 		{
 			return new DrawToTextureOption(texture);
 		}
+		
         /// <summary>
 		/// Draws the chart to a texture.
 		/// </summary>
@@ -101,6 +102,7 @@ namespace Syrus.Plugins.ChartEditor
 		{
 			return new DrawToTextureOption(texture, renderSettings);
 		}
+        
         /// <summary>
 		/// Draws the chart to a texture.
 		/// </summary>
@@ -122,6 +124,14 @@ namespace Syrus.Plugins.ChartEditor
         public static ChartOption ShowAltPeriod()
         {
 	        return new ShowAltPeriodOption();
+        }
+
+        /// <summary>
+        /// Sets the scale that we will render our labels at. Example 1 = normal 2 = 2x as large as they would be. 
+        /// </summary>
+        public static ChartOption SetLabelScale(float labelScale)
+        {
+	        return new SetLabelScaleOption(labelScale);
         }
 	}
 
