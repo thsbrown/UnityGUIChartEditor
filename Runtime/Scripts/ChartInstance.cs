@@ -91,6 +91,11 @@ namespace Syrus.Plugins.ChartEditor
 		public Color axesColor = Color.white;
 
 		/// <summary>
+		/// The scale that we will render our labels at. 1 = normal 2 = 2x as large as they would be. 
+		/// </summary>
+		public float labelScale = 1;
+		
+		/// <summary>
 		/// A line in the chart.
 		/// </summary>
 		internal struct Line

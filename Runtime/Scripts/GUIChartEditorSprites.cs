@@ -105,12 +105,13 @@ namespace Syrus.Plugins.ChartEditor
 			foreach (char c in text)
 			{
 				Texture2D tex = Digits[c.ToString()];
+				var scale = GUIChartEditor.CurrentChart.labelScale;
 				textures[i++] = new ChartInstance.Texture()
 				{
 					texture = tex,
-					rect = new Rect(x, y, tex.width, tex.height)
+					rect = new Rect(x, y, tex.width * scale, tex.height * scale)
 				};
-				x += tex.width;
+				x += tex.width * scale;
 			}
 			return textures;
 		}
